@@ -4,7 +4,7 @@ package lesson4.task1
 
 import kotlinx.html.currentTimeMillis
 import lesson1.task1.discriminant
-import lesson3.task1.pow
+//import lesson3.task1.pow
 import kotlin.math.sqrt
 
 /**
@@ -22,6 +22,14 @@ fun sqRoots(y: Double) =
             listOf(-root, root)
         }
     }
+
+fun pow(n : Int, st : Int) : Int {
+    var result : Int = 1
+    for (i in 1..st) {
+        result *= n
+    }
+    return result
+}
 
 /**
  * Пример
@@ -354,8 +362,7 @@ fun decimal(digits: List<Int>, base: Int): Int {
  */
 
 fun getDigit(digit : Char) : Int {
-    return when(digit) {
-
+    return when (digit) {
         '0' -> 0
         '1' -> 1
         '2' -> 2
@@ -395,8 +402,8 @@ fun getDigit(digit : Char) : Int {
 }
 
 fun decimalFromString(str: String, base: Int): Int {
-    var mas : List<Int> = str.toList().map { getDigit(it) }
-    return  decimal(mas, base)
+    val mas : List<Int> = str.toList().map { getDigit(it) }
+    return decimal(mas, base)
 }
 
 /**

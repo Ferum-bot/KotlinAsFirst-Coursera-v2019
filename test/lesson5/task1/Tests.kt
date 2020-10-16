@@ -123,6 +123,7 @@ class Tests {
     fun containsIn() {
         assertTrue(containsIn(mapOf("a" to "z"), mapOf("a" to "z", "b" to "sweet")))
         assertFalse(containsIn(mapOf("a" to "z"), mapOf("a" to "zee", "b" to "sweet")))
+        assertTrue(lesson5.task1.containsIn(mapOf("abc" to "cbd", "123" to "1", "99" to "0"), mapOf("123" to "1", "abc" to "cbd","99" to "0")))
     }
 
     @Test
