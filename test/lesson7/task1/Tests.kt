@@ -95,7 +95,7 @@ Basic, Ruby, Swift.
  * жИ шИ ЖИ Ши ЖА шА Жа ша жу шу жу щу ча шу щу ща жа жи жи жу чу ча
  */"""
         )
-        File("temp.txt").delete()
+        //File("temp.txt").delete()
     }
 
     @Test
