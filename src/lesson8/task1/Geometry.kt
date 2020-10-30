@@ -8,6 +8,57 @@ import kotlin.math.cos
 import kotlin.math.sin
 import kotlin.math.sqrt
 
+
+interface UserInterface {
+    var name: String?
+
+}
+
+
+class User {
+    constructor(name: String, surname: String) {
+        this.name = name
+        this.surName = surName
+    }
+
+    constructor() {
+        this.name = "fuck"
+        this.surName = "fuck"
+    }
+
+    companion object Fuck {
+        fun off3() {
+            println("fuck fuck")
+        }
+    }
+
+    fun goTo() {
+        println("fuck duck duck")
+        val fuck = Fuck.off3()
+
+    }
+
+    private var name: String = ""
+    private var surName: String = ""
+
+    public var arg: Int? = null
+        set(value) {
+            field = 100
+        }
+        get() = 90
+
+    fun getAllName() {
+        println("$name $surName")
+    }
+
+}
+
+
+fun main() {
+    val user = User("a", "b")
+    val user1 = User()
+}
+
 /**
  * Точка на плоскости
  */

@@ -4,6 +4,7 @@ package lesson7.task1
 
 import org.intellij.lang.annotations.RegExp
 import java.io.File
+import java.math.BigInteger
 import kotlin.math.min
 
 /**
